@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Счетчик кликов</title>
+</head>
+
+<body>
+
+  <button type="button" onClick="clickME()">Click me</button>
+
+  <p> Clicks: <a id="clicks">0</a></p>
+  <script>
+
+    let clicks = 0;
+
+    function clickME() {
+      clicks += 1;
+      document.getElementById("clicks").innerHTML = clicks;
+    }
+
+  </script>
+</body>
+
+</html>
